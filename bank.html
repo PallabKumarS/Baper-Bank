@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section>
+        <h1 class="text-center text-6xl mb-7 mt-5 font-bold">
+            Welcome To The <span class="text-violet-600">Baper</span> <span class="text-amber-500">Bank Page</span>
+        </h1>
+
+        <div class="flex w-3/5 mx-auto gap-x-5 justify-center mb-16">
+
+            <!-- deposit  -->
+            <div id="deposit" class="w-64 bg-teal-700 h-24 rounded-xl">
+                <h3 class="ml-7 text-xl font-bold pt-5 text-white">
+                    Deposit
+                </h3>
+                <p class="ml-7 text-xl font-semibold text-white">$<span id="deposit-amount-display">50</span></p>
+            </div>
+
+            <!-- withdraw  -->
+            <div id="withdraw" class="w-64 bg-pink-500 h-24 rounded-xl">
+                <h3 class="ml-7 text-xl font-bold pt-5 text-white">
+                    Withdraw
+                </h3>
+                <p class="ml-7 text-xl font-semibold text-white">$<span id="withdraw-amount-display">0</span></p>
+            </div>
+
+            <!-- balance  -->
+            <div id="balance" class="w-64 bg-red-600 h-24 rounded-xl">
+                <h3 class="ml-7 text-xl font-bold pt-5 text-white">
+                    Balance
+                </h3>
+                <p class="ml-7 text-xl font-semibold text-white">$<span id="balance-amount-display">500</span></p>
+            </div>
+        </div>
+
+        <!-- input amount  -->
+        <div class="flex gap-x-5 justify-center">
+
+            <!-- deposit amount  -->
+            <div class="bg-violet-800 w-[400px] rounded-xl">
+                <h3 class="text-white text-2xl font-semibold ml-10 mt-10 mb-5 rounded-xl">
+                    Please Deposit
+                </h3>
+                <input class="w-[320px] ml-10 py-2 px-3 mb-5 rounded-xl" type="number" name="" id="deposit-amount"
+                       placeholder="$ enter amount you want to deposit">
+                <button class="bg-emerald-800 py-2 px-5 text-white ml-10 rounded-xl mb-5 hover:bg-red-600"
+                        id="deposit-btn">Deposit</button>
+            </div>
+
+            <!-- withdraw amount  -->
+            <div class="bg-sky-800 w-[400px] rounded-xl">
+                <h3 class="text-white text-2xl font-semibold ml-10 mt-10 mb-5 rounded-xl">
+                    Please Withdraw
+                </h3>
+                <input class="w-[320px] ml-10 py-2 px-3 mb-5 rounded-xl" type="number" name="" id="withdraw-amount"
+                       placeholder="$ enter amount you want to withdraw">
+                <button class="bg-emerald-800 py-2 px-5 text-white ml-10 rounded-xl mb-5 hover:bg-red-600"
+                        id="withdraw-btn">Withdraw</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="../Baap er bank website/bank.js"></script>
+</body>
+
+</html>
